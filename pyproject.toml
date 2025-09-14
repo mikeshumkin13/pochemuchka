@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "pochemuchka"
+version = "0.1.0"
+description = "Pochemuchka MVP (FastAPI+Telegram)"
+authors = ["a12345 <shu.m2010@yandex.ru>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.4.2"
+pytest-asyncio = "^1.2.0"
+httpx = "^0.28.1"
+ruff = "^0.13.0"
+black = "^25.1.0"
+mypy = "^1.18.1"
+types-redis = "^4.6.0.20241004"
+types-requests = "^2.32.4.20250913"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
