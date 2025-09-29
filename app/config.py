@@ -8,6 +8,7 @@ class Settings(BaseModel):
     openai_api_key: str = os.getenv("OPENAI_API_KEY", "")
     llm_model: str = os.getenv("LLM_MODEL", "gpt-4o-mini")
     moderation_enabled: bool = os.getenv("MODERATION_ENABLED", "true").lower() == "true"
+    default_daily_limit: int = int(os.getenv("PARENT_DEFAULT_DAILY_LIMIT", "20"))
 
 settings = Settings()
 
